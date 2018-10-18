@@ -57,7 +57,7 @@ int main() {
 }
 
 char **get_input(char *input) {
-    char **command = malloc(8 * sizeof(char *));
+    char **command = (char**) (malloc(8 * sizeof(char *)));
     if (command == NULL) {
         perror("malloc failed");
         exit(1);

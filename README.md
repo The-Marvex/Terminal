@@ -9,7 +9,7 @@ A simple UNIX shell written in C with basic functionality. It demonstrates the b
 *Only builtins are: cd, help, exit.
 
 ## Running the Shell
-To run the terminal simply go to the native terminal and run the following code
+To run the shell simply go to the native terminal and run the following code
 ```
 $gcc -g shell.c -lreadline
 ```

@@ -15,7 +15,7 @@ int main() {
     int stat_loc;
 
     while (1) {
-        input = readline("unixsh> ");
+        input = readline("mvxsh> ");
         command = get_input(input);
 
         if (!command[0]) {      /* Handle empty commands */

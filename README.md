@@ -12,5 +12,5 @@ A simple UNIX shell written in C with basic functionality. It demonstrates the b
 ## Running the Shell
 To run the shell simply go to the native terminal and run the following code
 ```
-$gcc -g shell.c -lreadline
+$ gcc -g shell.c -lreadline
 ```

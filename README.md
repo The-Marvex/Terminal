@@ -2,7 +2,7 @@
 
 A simple UNIX shell written in C with basic functionality. It demonstrates the basics of how a shell works. That is: read, parse, fork, exec, and wait. Since its purpose is demonstration (not feature completeness or even fitness for casual use), it has many limitations, including:
 
-* Commands must be on a single line.
+* Commands must be on a single line
 * Arguments must be separated by whitespace.
 * No quoting arguments or escaping whitespace.
 * No piping or redirection.

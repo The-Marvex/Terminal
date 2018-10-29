@@ -14,3 +14,6 @@ To run the shell simply go to the native terminal and run the following code
 ```
 $ gcc -g shell.c -lreadline
 ```
+## Resources to learn
+* https://brennan.io/2015/01/16/write-a-shell-in-c/
+* https://indradhanush.github.io/blog/writing-a-unix-shell-part-1/

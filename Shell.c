@@ -7,6 +7,37 @@
 
 char **get_input(char *);
 int cd(char *);
+int help(char **args);
+int exit(char **args);
+
+char *builtin[] = {
+    "help",
+    "exit"
+};
+
+int (*builtin[])(char **) = {
+    &help,
+    &exit
+};
+
+int numberOfBuiltins() {
+    return sizeof(builtin)/sizeof(char *);
+}
+
+int help(char **args){
+    int i;
+    printf("OS Project for III Semester\n");
+    printf("Made by Manas, Mayank and Manish\n");
+    printf("The following functions are available:\n");
+    
+    for(i = 0 ; i < numberOfBuiltins() ; i++) {
+        printf(" %s\n" , builtin[i]);
+    }
+}
+
+int exit(char **args){
+    return 0;
+}
 
 int main() {
     char **command;

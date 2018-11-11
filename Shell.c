@@ -7,6 +7,8 @@
 
 char **get_input(char *);
 int cd(char *);
+int mvx_help(char *);
+int mvx_exit(char *);
 
 int main() {
     char **command;
@@ -31,6 +33,23 @@ int main() {
 
             /* Skip the fork */
             continue;
+        }
+        
+        if (strcmp(command[0], "help") == 0){
+            if (mvx_help(command[1]) < 1) {
+                perror(command[1]);
+            }
+            
+            continue;
+        }
+        
+        if (strcmp(command[0], "exit") == 0){
+            if (mvx_exit(command[1]) == 0) {
+                printf("Goodbye\n");
+                return 0;
+            }
+            else
+                perror(command[1]);
         }
 
         child_pid = fork();
@@ -81,4 +100,16 @@ char **get_input(char *input) {
 
 int cd(char *path) {
     return chdir(path);
+}
+
+int mvx_help(char *x){
+  int i;
+  printf("OS Project\n");
+  printf("Created by Manas, Mayank and Manish.\n");
+  printf("Use the man command for information on other programs.\n");
+  return 1;
+}
+
+int mvx_exit(char *x){
+    return 0;
 }

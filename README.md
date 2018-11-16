@@ -1,4 +1,4 @@
-# A Shell in C
+# A Unix Shell in C
 
 A simple UNIX shell written in C with basic functionality. It demonstrates the basics of how a shell works. That is: read, parse, fork, exec, and wait. Since its purpose is demonstration (not feature completeness or even fitness for casual use), it has many limitations, including:
 
@@ -10,6 +10,13 @@ A simple UNIX shell written in C with basic functionality. It demonstrates the b
 
 
 ## Running the Shell
+
+make sure you have developer tools installed, if not try running the code below
+
+```
+$ sudo apt install libconfig-dev
+```
+
 To run the shell simply go to the native terminal and run the following code
 ```
 $ gcc -g shell.c -lreadline
